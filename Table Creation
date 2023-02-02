@@ -1,0 +1,28 @@
+User
+	-userid			--> primary key USER 
+	-name
+	-contact
+	-address
+	-gender
+	-nationality
+
+product
+	-productid		--> primary key PRODUCT 
+	-productName
+	-manufacturerid		--> foreign key USER
+	-price
+	-quantity
+	-weight
+order
+	-orderid		--> primary key ORDER
+	-userid			--> foreign key USER
+	-order_status
+	-order-date
+	-expected_delivery
+	-quanitiy
+
+order_details
+	-orderid		--> foreign key ORDER		(primary
+	-productid		--> foreign key PRODUCT			keys)
+	-trans_status
+	-delivery_date
